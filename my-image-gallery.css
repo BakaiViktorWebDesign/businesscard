@@ -1,3 +1,5 @@
+/*  BASIC CSS RESET  */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +19,8 @@ body {
     background-attachment: fixed;
 }
 
+/*  TYPOGRAPHY ON THE TOP OF THE PAGE  */
+
 h1 {
     font-size: 5rem;
     text-align: center;
@@ -33,6 +37,7 @@ h2 {
     text-shadow: 0 -1rem 1rem rgba(0,0,0,1);
 }
 
+/*  IMAGE PROPERTIES  */
 
 .images img {
     display: block;
@@ -53,6 +58,8 @@ img:hover {
     transform: scale(.95);
     transition: all 1s ease-in-out;
 }
+
+/*  MEDIA QUERYS  */
 
 @media all and (orientation: portrait) {
   

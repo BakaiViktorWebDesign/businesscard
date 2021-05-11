@@ -1,3 +1,5 @@
+/*  BASIC CSS RESET  */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +22,8 @@ body {
   color: rgba(255,255,255,.7);
 }
 
+/*  FLAGS TO CHOOSE LANGUAGES */
+
 .flags {
   position: fixed;
   top: 2rem;
@@ -36,10 +40,75 @@ body {
   box-shadow: 0 0 1.5rem .5rem rgba(0,0,0,.7);
 }
 
+/*  LEFT PROFILE CONTAINER PROPERTIES  */
+
+.profile-card { 
+  position: absolute;
+  top: 54%;
+  left: 20%;
+  transform: translate(-20%, -50%);
+  background-color: rgba(0,0,0,.5);
+  width: 70vw;
+  height: 80vh;
+  max-width: calc(100vw - 10vw);
+  border-radius: 2rem;
+  border: .3rem solid rgba(255,255,255,.7);
+  box-shadow: 0 0 2rem 2rem rgba(0,0,0,.4);
+}
+
+.image {
+  float: right;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10%;
+  margin-top: -6rem;
+  margin-right: -2rem;
+  padding: .2rem;
+  background: rgba(255,255,255,.7);
+  filter: grayscale(80%);
+}
+
+.image:hover {
+  transform: rotatey(360deg);
+  transition: all 1s ease-in-out;
+  filter: grayscale(0);
+}
+
+.head, .content {
+  text-align: center;
+  margin: 3rem 0 2rem 15rem;
+}
+
+.content {
+  padding: 1rem;
+  margin: 6rem 3rem 6rem 3rem;
+}
+
+.about {
+  border-top: .3rem solid rgba(255,255,255,.7);
+  border-bottom: .3rem solid rgba(255,255,255,.7);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.links {
+  margin-top: 6rem;
+}
+
+.header2 {
+  text-decoration: underline;
+}
+
+#name {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 3rem;
+  border-bottom: .3rem solid rgba(255,255,255,.7);
+}
 
 p {
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.4vw;
   text-shadow: .1rem .1rem .4rem rgba(0,0,0,.2);
 }
 
@@ -50,39 +119,6 @@ span {
 h2 {
   font-size: 2rem;
   margin-top: 2rem;
-}
-
-.profile-card { 
-  position: absolute;
-  top: 55%;
-  left: 20%;
-  transform: translate(-20%, -50%);
-  background-color: rgba(0,0,0,.5);
-  width: 70%;
-  height: 70%;
-  max-width: calc(100vw - 10vw);
-  border-radius: 2rem;
-  border: .3rem solid rgba(255,255,255,.7);
-  box-shadow: 0 0 2rem 2rem rgba(0,0,0,.4);
-}
-
-.image-gallery {
-  position: absolute;
-  top: 55%;
-  right: 5%;
-  transform: translate(-0%, -50%);
-  background-color: rgba(0,0,0,.5);
-  width: 10%;
-  height: 70%;
-  max-width: calc(100vw - 10vw);
-  border-radius: 2rem;
-  border: .3rem solid rgba(255,255,255,.7);
-  box-shadow: 0 0 2rem 2rem rgba(0,0,0,.4);
-}
-
-.head, .content {
-  text-align: center;
-  margin: 3rem 0 2rem 15rem;
 }
 
 ul {
@@ -109,54 +145,25 @@ li a i:hover {
   transform: scale(1.2);
 }
 
-.content {
-  padding: 1rem;
-  margin: 6rem 3rem 6rem 3rem;
-}
+/*  RIGHT GALLERY CONTAINER PROPERTIES  */
 
-.about {
-  border-top: .3rem solid rgba(255,255,255,.7);
-  border-bottom: .3rem solid rgba(255,255,255,.7);
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.links {
-  margin-top: 6rem;
-}
-
-#name {
-  display: inline;
-  text-transform: uppercase;
-  font-size: 3rem;
-  border-bottom: .3rem solid rgba(255,255,255,.7);
-}
-
-.header2 {
-  text-decoration: underline;
-}
-
-.image {
-  float: right;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 10%;
-  margin-top: -6rem;
-  margin-right: -2rem;
-  padding: .2rem;
-  background: rgba(255,255,255,.7);
-  filter: grayscale(80%);
-}
-
-.image:hover {
-  transform: rotatey(360deg);
-  transition: all 1s ease-in-out;
-  filter: grayscale(0);
+.image-gallery {
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  transform: translate(-0%, -50%);
+  background-color: rgba(0,0,0,.5);
+  width: 10vw;
+  height: 70vh;
+  max-width: calc(100vw - 10vw);
+  border-radius: 2rem;
+  border: .3rem solid rgba(255,255,255,.7);
+  box-shadow: 0 0 2rem 2rem rgba(0,0,0,.4);
 }
 
 .image-link img {
   display: block;
-  width: 60%;
+  width: 5.8vw;
   margin: 1rem auto;
   border-radius: 1rem;
   border: .2rem solid rgba(255,255,255,.7);
@@ -166,9 +173,11 @@ li a i:hover {
   display: block;
   border-bottom: .3rem solid rgba(255,255,255,.7);
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2vw;
   text-align: center;
 }
+
+/*   MEDIA QUERYS   */
 
 @media all and (orientation: portrait) {
   
@@ -192,9 +201,9 @@ li a i:hover {
     left: 50%;
     transform: translate(-50%);
     background-color: rgba(0,0,0,.5);
-    width: 70%;
-    height: 130%;
-    max-width: calc(100vw - 10vw);
+    width: 90vw;
+    height: 130vh;
+    max-width: calc(100vw - 5vw);
     border-radius: 2rem;
     border: .3rem solid rgba(255,255,255,.7);
     box-shadow: 0 0 2rem 2rem rgba(0,0,0,.4);
@@ -206,9 +215,9 @@ li a i:hover {
     left: 50%;
     transform: translate(-50%);
     background-color: rgba(0,0,0,.5);
-    width: 70%;
-    height: 130%;
-    max-width: calc(100vw - 10vw);
+    width: 90vw;
+    height: 220vh;
+    max-width: calc(100vw - 5vw);
     padding: 5rem;
     border-radius: 2rem;
     border: .3rem solid rgba(255,255,255,.7);
@@ -220,6 +229,42 @@ li a i:hover {
     margin: 1rem;
     box-shadow: none;
   }
+  
+  li a i:hover {
+    color: rgba(150,100,0,1);
+    margin: 1rem;
+    border-radius: 20%;
+    box-shadow: none;
+    transform: scale(1.1);
+  }
 
+  p {
+    font-weight: bold;
+    font-size: 4vw;
+    text-shadow: .1rem .1rem .4rem rgba(0,0,0,.2);
+  }
+
+  .image-link img {
+    display: block;
+    width: 60vw;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    border: .2rem solid rgba(255,255,255,.7);
+  }
+
+  #gallery {
+    display: block;
+    border-bottom: .3rem solid rgba(255,255,255,.7);
+    text-transform: uppercase;
+    font-size: 6vw;
+    text-align: center;
+  }
+  
+  .name-headline {
+    display: inline-block;
+    position: relative;
+    left: -6rem;
+    margin-top: 3rem;
+  }
 
 }

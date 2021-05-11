@@ -197,12 +197,12 @@ li a i:hover {
 
   .profile-card { 
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%);
     background-color: rgba(0,0,0,.5);
-    width: 90vw;
-    height: 130vh;
+    width: 85vw;
+    height: 120vh;
     max-width: calc(100vw - 5vw);
     border-radius: 2rem;
     border: .3rem solid rgba(255,255,255,.7);
@@ -211,12 +211,12 @@ li a i:hover {
   
   .image-gallery {
     position: absolute;
-    top: 170%;
+    top: 150%;
     left: 50%;
     transform: translate(-50%);
     background-color: rgba(0,0,0,.5);
-    width: 90vw;
-    height: 220vh;
+    width: 85vw;
+    height: 150vh;
     max-width: calc(100vw - 5vw);
     padding: 5rem;
     border-radius: 2rem;
@@ -263,8 +263,12 @@ li a i:hover {
   .name-headline {
     display: inline-block;
     position: relative;
-    left: -6rem;
+    left: -7rem;
     margin-top: 3rem;
+  }
+
+  #name {
+    font-size: 6vw;
   }
 
 }
